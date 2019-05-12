@@ -9,17 +9,12 @@ import { DataModel } from 'src/app/models/data.model';
   //,providers:[TestDataService]
 })
 export class DataListComponent implements OnInit {
-  jsonData: any;
+  
   dataList: DataModel[];
 
   constructor(private _testDataService: TestDataService) { }
 
   ngOnInit() {
-    this._testDataService.getData().subscribe(response => {
-      this.jsonData = response;
-    })
-
-
     this._testDataService.requestDataFromMultipleSources().subscribe(data => {
       this.dataList = data;
     })

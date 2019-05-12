@@ -8,12 +8,14 @@ import { DataListComponent } from './components/data-list/data-list.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 import { TestDataService } from './services/test-data.service';
+import { AllDataComponent } from './components/all-data/all-data.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DataListComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    AllDataComponent
   ],
   imports: [
     BrowserModule,
