@@ -1,0 +1,10 @@
+<h2>Data from https://jsonplaceholder.typicode.com/posts/</h2>
+<p>{{jsonData | json}}</p>
+<hr>
+<h2>Data from multiple requests</h2>
+<ul class="list-group">
+  <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let data of dataList">
+    {{ data.title}}
+    <span class="badge badge-primary badge-pill">{{ data.id}}</span>
+  </li>
+</ul>
